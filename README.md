@@ -24,8 +24,8 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 
 ### Links
 
-- Solution URL: [Frontend Mentor IO Solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-4thGx7DsIJ)
-- Live Site URL: [Hosted on GitHub Pages](https://filipjanik00.github.io/stats-preview-card-component-main/)
+- Solution URL: [Frontend Mentor IO Solution](https://www.frontendmentor.io/solutions/ping-coming-soon-fDzE5XDwmF)
+- Live Site URL: [Hosted on GitHub Pages](https://filipjanik00.github.io/ping-coming-soon-page/)
 
 ## My process
 
