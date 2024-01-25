@@ -1,0 +1,266 @@
+:root {
+  --clr-primary-200: hsl(223, 87%, 63%);
+
+  --clr-secondary-200: hsl(223, 100%, 88%);
+  --clr-secondary-400: hsl(354, 100%, 66%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-400: hsl(0, 0%, 59%);
+  --clr-neutral-800: hsl(209, 33%, 12%);
+
+  --fs-main: 1.25rem;
+
+  --fw-light: 300;
+  --fw-semi: 600;
+  --fw-bold: 700;
+
+  --ff-main: "Libre Franklin", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* General Styling */
+body {
+  font-family: var(--ff-main);
+  font-weight: var(--fw-semi);
+  font-size: var(--fs-main);
+  background: var(--clr-neutral-100);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+/* Main styling */
+.main {
+  margin: 5rem 1.5rem 0 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.logo__img {
+  height: 1.25rem;
+  margin-inline: auto;
+}
+
+.main__title {
+  margin-top: 2rem;
+  font-size: var(--fs-main);
+  color: var(--clr-neutral-400);
+  font-weight: var(--fw-light);
+}
+
+.main__title span {
+  color: var(--clr-neutral-800);
+  font-weight: var(--fw-bold);
+}
+
+.main__description {
+  font-size: 0.8rem;
+  font-weight: var(--fw-light);
+  margin-top: 0.5rem;
+}
+
+.notify {
+  width: 300px;
+  margin-inline: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.notify__input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.notify__input,
+.notify__btn {
+  height: 45px;
+  width: 300px;
+  margin-inline: auto;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+}
+
+.notify__input {
+  border: 1px solid var(--clr-secondary-200);
+  padding-left: 2rem;
+  color: var(--clr-secondary-200);
+}
+
+.notify__input::placeholder {
+  color: var(--clr-secondary-200);
+  opacity: 0.8;
+  font-weight: var(--fw-light);
+}
+
+.notify__input.placeholder-red::placeholder {
+  color: red;
+  font-weight: var(--fw-semi);
+}
+
+.notify__input:focus {
+  outline: none !important;
+  color: var(--clr-secondary-200);
+}
+
+.notify__btn {
+  background: var(--clr-primary-200);
+  color: var(--clr-neutral-100);
+  -webkit-box-shadow: 3px 19px 47px -16px rgba(79, 98, 243, 1);
+  -moz-box-shadow: 3px 19px 47px -16px rgba(79, 98, 243, 1);
+  box-shadow: 3px 19px 47px -16px rgba(79, 98, 243, 1);
+}
+
+.error-msg {
+  display: none;
+  color: red;
+  font-size: 0.8rem;
+  font-weight: var(--fw-light);
+  text-align: left;
+  margin-left: 0.5rem;
+}
+
+.suceed-msg {
+  display: none;
+  color: green;
+  font-size: 0.8rem;
+  font-weight: var(--fw-light);
+  text-align: left;
+  margin-left: 0.5rem;
+}
+
+.main__img {
+  margin-top: 4rem;
+  width: 350px;
+  margin-inline: auto;
+}
+
+.socials {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-icon {
+  font-size: 0.85rem;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: var(--clr-primary-200);
+  border: 1px solid var(--clr-secondary-200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.social-icon:hover {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-primary-200);
+}
+
+.footer__description {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: var(--fw-light);
+  color: var(--clr-neutral-400);
+}
+
+/* Media Queries */
+@media (min-width: 800px) {
+  .main {
+    margin: 5rem 0 0 0;
+  }
+
+  .logo__img {
+    height: 1.5rem;
+  }
+
+  .main__title {
+    font-size: 2.75rem;
+  }
+
+  .main__description {
+    font-size: 1.125rem;
+  }
+
+  .notify {
+    flex-direction: row;
+    width: 600px;
+  }
+
+  .notify__input,
+  .notify__btn {
+    height: 50px;
+  }
+
+  .notify__input {
+    width: 430px;
+    font-size: 1rem;
+  }
+
+  .notify__input::placeholder {
+    font-size: 1rem;
+  }
+
+  .notify__btn {
+    width: 180px;
+  }
+
+  .main__img {
+    width: 600px;
+  }
+
+  .socials {
+    margin-top: 5rem;
+  }
+
+  .error-msg,
+  .suceed-msg {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+}
